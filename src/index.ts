@@ -29,6 +29,14 @@ app.use('/history', historyRouter);
 
 app.use(errorHandler);
 
+app.get('/', (req, res) => {
+	res.json({ alive: true });
+});
+
+app.get('*', (req, res) => {
+	res.status(404).json({ error: 'Not found' });
+});
+
 const PORT = process.env.PORT || 8989;
 
 app.listen(PORT, () => {

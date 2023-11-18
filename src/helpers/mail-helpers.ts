@@ -45,12 +45,12 @@ export const sendVerificationMail = async (token: string, profile: Profile) => {
 		attachments: [
 			{
 				filename: 'logo.png',
-				path: path.join(__dirname, '../mail/logo.png'),
+				path: path.join(__dirname, '../mail/images/logo.png'),
 				cid: 'logo',
 			},
 			{
 				filename: 'welcome.png',
-				path: path.join(__dirname, '../mail/welcome.png'),
+				path: path.join(__dirname, '../mail/images/welcome.png'),
 				cid: 'welcome',
 			},
 		],
@@ -84,12 +84,12 @@ export const sendForgetPasswordMail = async (options: Options) => {
 		attachments: [
 			{
 				filename: 'logo.png',
-				path: path.join(__dirname, '../mail/logo.png'),
+				path: path.join(__dirname, '../mail/images/logo.png'),
 				cid: 'logo',
 			},
 			{
 				filename: 'forget_password.png',
-				path: path.join(__dirname, '../mail/forget_password.png'),
+				path: path.join(__dirname, '../mail/images/forget_password.png'),
 				cid: 'forget_password',
 			},
 		],
@@ -117,12 +117,12 @@ export const sendPassResetSuccessMail = async (name: string, email: string) => {
 		attachments: [
 			{
 				filename: 'logo.png',
-				path: path.join(__dirname, '../mail/logo.png'),
+				path: path.join(__dirname, '../mail/images/logo.png'),
 				cid: 'logo',
 			},
 			{
 				filename: 'forget_password.png',
-				path: path.join(__dirname, '../mail/forget_password.png'),
+				path: path.join(__dirname, '../mail/images/forget_password.png'),
 				cid: 'forget_password',
 			},
 		],
